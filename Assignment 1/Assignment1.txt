@@ -1,0 +1,84 @@
+1.What is Emmet?
+
+Emmet is a popular plugin which can be used while development it gives short expressions to generate HTML,CSS
+
+For ex:
+Shorthand exp for generating HTML skeleton is !+Enter in VS code
+
+div{This is div} produces <div> This is div </div>
+
+-----------------------------------------------------------------------------------------------------------
+
+2.Difference between a Library and Framework?
+
+A framework is like the foundation upon which developers build applications for specific platforms.A software lead first selects which framework to use before start working on the project, framework controls the workflow of the software.
+For ex - Angular,Vue
+
+A library is like a collection of pre written code that can be used to simplify tasks. Libraries are available to reuse the code already written by someone else.It saves times and effort to write large codes.
+For ex - React Js
+
+Developers can invoke libraries to perform specific tasks by using components, classes, and methods. A framework, however, already provides code to perform common tasks and uses code provided by a developer for custom functionality.
+
+-----------------------------------------------------------------------------------------------------------
+
+3. What is CDN? Why de we use it?
+
+CDN stands for content delivery network,it is invented to shorten the physical distance between website user and website hosting server. 
+A website only works if it stands on the expectations of the user if user is not satisfied then most likely your site will not grow, to tackle this issue bunch of servers placed in different locations all over the world. To minimize the physical distance between your website and your user you can choose to deliver it through CDN which would cache a copy of your content on each of their servers.
+
+-----------------------------------------------------------------------------------------------------------
+
+4. Why React is known as React?
+
+React is called "React" because of its core feature, which is its ability to "react" or respond dynamically to changes in data.
+React's primary goal is to simplify the creation of complex, interactive user interfaces by breaking them down into smaller, reusable components.These components are built using a declarative syntax that allows developers to describe what the interface should look like at any given moment, and React takes care of efficiently updating the DOM (Document Object Model) as needed when the data changes.
+
+-----------------------------------------------------------------------------------------------------------
+
+5. What is crossorigin in script tag?
+
+The crossorigin attribute is used in the HTML <script> tag to control how the browser handles cross-origin requests when fetching JavaScript files. Cross-origin requests occur when a web page hosted on one domain (origin) tries to load a resource, such as a script, from a different domain. This is subject to the same-origin policy, which is a security measure implemented by web browsers to prevent unauthorized access to data on different domains.
+
+-----------------------------------------------------------------------------------------------------------
+
+6. What is difference between React and ReactDOM?
+
+React: React is a javascript library, designed for building better user interfaces.
+
+React-DOM: React-DOM is a complimentary library to React which glues React to the browser DOM
+
+In a nutshell, Whenever we use component, classes, elements, etc. We’re using React and whenever we use methods like render() or findDOMNode() we’re using React-DOM.
+
+-----------------------------------------------------------------------------------------------------------
+
+7. What is difference between react.development.js and react.production.js files via CDN?
+
+It comes when we inject React in our code using CDN, these two files i.e react.development.js and react.production.js have properties differ from each other
+
+react.development.js
+This file is intended for development purpose.
+It includes additional warnings and debugging info
+It is not optimised for production
+
+react.production.js
+This is for production purpose
+It omits warning and debugging info making it light weight
+
+-----------------------------------------------------------------------------------------------------------
+
+8. What is async and defer?
+
+While normal HTML parsing if script comes in between with src, the browser will fetch and execute the script,till then parsing is on hold, which makes it slow
+
+Async
+Using async fetching and parsing is done parallely and while executing parsing holds then after execution it again starts
+
+	-------------Parsing-------------->			  ----------Parsing contd---------->		          
+		     Fetching------------->Executing-------------->
+
+Defer
+Usinf defer with script tag is small modification like using async, in this fetching and HTML parsing is done parallely,and fetching exection is to be done,but it will not start till browser has not completed its parsing.
+
+	-------------Parsing------------------------------------>	
+	          
+		     <------Fetching------------->               <----------Executing--------->
